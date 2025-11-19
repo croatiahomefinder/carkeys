@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Premium Luxury Car Keys | Porsche · Jaguar Land Rover · Volvo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Specialist automotive locksmith for Porsche BCM keys, Jaguar Land Rover smart and blade keys, and Volvo SPA proximity keys. Lost keys, spare keys and on-site programming."
+  />
+  <style>
+    :root {
+      --bg: #050509;
+      --bg-alt: #0e0e14;
+      --accent: #d4af37;
+      --accent-soft: rgba(212, 175, 55, 0.12);
+      --text: #f5f5f7;
+      --muted: #a1a1aa;
+      --danger: #f97373;
+      --card: #111119;
+      --border: #27272f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151521 0, #020207 55%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(2, 2, 8, 0.96), rgba(2, 2, 8, 0.8), transparent);
+      border-bottom: 1px solid rgba(39, 39, 47, 0.7);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-main {
+      font-size: 1.1rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .brand-tagline {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .brand-tagline span {
+      opacity: 0.7;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      background: rgba(8, 8, 14, 0.95);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .cta-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f5d27a, #d4af37);
+      color: #111111;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.85);
+    }
+
+    .btn-ghost {
+      border-color: rgba(212, 175, 55, 0.5);
+      background: rgba(5, 5, 11, 0.9);
+      color: var(--text);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(15, 15, 23, 0.95);
+      transform: translateY(-1px);
+    }
+
+    .btn span.icon {
+      font-size: 1rem;
+      margin-right: 6px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 28px 0 32px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 20px;
+      }
+    }
+
+    .hero-kicker {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .hero-kicker strong {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3vw + 1rem, 2.7rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero-title span.accent {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 16px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .hero-badge {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(39, 39, 47, 0.9);
+      background: rgba(10, 10, 18, 0.9);
+      color: var(--muted);
+    }
+
+    .hero-badge strong {
+      color: var(--text);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .hero-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .hero-note span {
+      color: var(--accent);
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, rgba(212, 175, 55, 0.28), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(15, 15, 23, 1), #050509);
+      border-radius: 24px;
+      padding: 18px 18px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .hero-card-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-card-heading {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: #111111;
+    }
+
+    .hero-card-sub {
+      font-size: 0.78rem;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 10px;
+    }
+
+    .hero-card-photo {
+      margin-bottom: 10px;
+      border-radius: 16px;
+      background: rgba(0, 0, 0, 0.12);
+      min-height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .hero-card-photo span {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-card-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.68rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-card-meta strong {
+      color: #111111;
+    }
+
+    /* BRAND SELECTOR */
+
+    .selector {
+      padding: 6px 0 28px;
+    }
+
+    .selector-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .selector-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .selector-card {
+      background: linear-gradient(145deg, rgba(10, 10, 18, 0.95), rgba(3, 3, 9, 0.98));
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 12px 13px 11px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.85);
+    }
+
+    .selector-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.18), transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .selector-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .selector-title {
+      font-size: 0.98rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 6px;
+    }
+
+    .selector-body {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .selector-models {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .selector-models span {
+      color: var(--accent);
+    }
+
+    .selector-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.7);
+      background: rgba(10, 10, 18, 0.96);
+      position: relative;
+      z-index: 1;
+    }
+
+    .selector-link span.icon {
+      font-size: 0.9rem;
+    }
+
+    /* GENERIC SECTIONS */
+
+    .section {
+      padding: 18px 0 36px;
+    }
+
+    .section-header {
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-title span {
+      color: var(--accent);
+    }
+
+    .section-subtitle {
+      font-size: 0.78rem;
+      color: var(--muted);
+      max-width: 460px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(10, 10, 18, 0.95), rgba(3, 3, 9, 0.98));
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 16px 16px 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.85);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .card-chip {
+      font-size: 0.68rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      background: var(--accent-soft);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .card-body {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .models-list {
+      margin-top: 8px;
+      columns: 2;
+      column-gap: 20px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      .models-list {
+        columns: 1;
+      }
+    }
+
+    .models-list li {
+      margin-bottom: 4px;
+      list-style: none;
+      position: relative;
+      padding-left: 14px;
+    }
+
+    .models-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: var(--accent);
+    }
+
+    .note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .note span {
+      color: var(--accent);
+    }
+
+    .warning {
+      margin-top: 10px;
+      padding: 7px 9px;
+      border-radius: 10px;
+      border: 1px solid rgba(248, 113, 113, 0.6);
+      background: rgba(68, 23, 23, 0.4);
+      font-size: 0.75rem;
+      color: #fecaca;
+    }
+
+    .warning strong {
+      color: #fee2e2;
+    }
+
+    .services-list {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 640px) {
+      .services-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-item {
+      background: rgba(15, 15, 23, 0.95);
+      border-radius: 10px;
+      padding: 7px 9px;
+      border: 1px solid rgba(39, 39, 47, 0.9);
+    }
+
+    .service-item strong {
+      font-size: 0.8rem;
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .service-item span {
+      color: var(--muted);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      font-size: 0.68rem;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(15, 15, 23, 0.9);
+      border: 1px solid rgba(39, 39, 47, 0.9);
+      color: var(--muted);
+    }
+
+    .tag span {
+      color: var(--accent);
+    }
+
+    .key-photo {
+      margin-top: 10px;
+      border-radius: 14px;
+      background: rgba(5, 5, 11, 0.95);
+      border: 1px dashed rgba(39, 39, 47, 0.9);
+      padding: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .key-photo img {
+      max-width: 100%;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 6px;
+    }
+
+    /* GRID LAYOUTS PER BRAND */
+
+    .brand-grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .brand-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .brand-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 960px) {
+      .brand-grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      border-top: 1px solid rgba(39, 39, 47, 0.9);
+      padding: 14px 0 20px;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-row span.highlight {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="brand">
+            <div class="brand-main">Premium&nbsp;Luxury&nbsp;Car&nbsp;Keys</div>
+            <div class="brand-tagline">
+              Specialist Porsche · Jaguar Land Rover · Volvo keys
+              <span>— trading as Kovac Services</span>
+            </div>
+          </div>
+          <div class="nav-actions">
+            <div class="pill">Emergency automotive locksmith</div>
+            <div class="cta-main">
+              <a href="tel:+44XXXXXXXXXX" class="btn btn-primary">
+                <span class="icon">📞</span>
+                Call now
+              </a>
+              <a href="https://wa.me/44XXXXXXXXXX" class="btn btn-ghost">
+                <span class="icon">💬</span>
+                WhatsApp a photo of your key
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-kicker">
+                High-end automotive keys · <strong>On-site programming</strong>
+              </div>
+              <h1 class="hero-title">
+                Porsche <span class="accent">BCM</span> keys, JLR &amp; Volvo key specialists.
+              </h1>
+              <p class="hero-subtitle">
+                We don’t try to do everything. We focus on the modern, high-value key types
+                we know inside-out: BCM-platform Porsche car-shaped keys, Jaguar Land Rover
+                smart &amp; blade keys, and late-model Volvo proximity keys.
+              </p>
+              <div class="hero-badges">
+                <div class="hero-badge"><strong>Lost keys</strong> · all keys lost</div>
+                <div class="hero-badge"><strong>Spare keys</strong> · while-you-wait</div>
+                <div class="hero-badge">Dealer-level equipment, independent prices</div>
+              </div>
+              <div class="hero-ctas">
+                <a href="tel:+44XXXXXXXXXX" class="btn btn-primary">
+                  <span class="icon">⚡</span>
+                  Urgent key help
+                </a>
+                <a href="#brands" class="btn btn-ghost">
+                  Choose your make &amp; model
+                </a>
+              </div>
+              <p class="hero-note">
+                Best first step: send a <span>clear photo of your key front &amp; back</span>
+                and your registration. We’ll confirm coverage and give an exact quote.
+              </p>
+            </div>
+
+            <aside class="hero-card">
+              <div class="hero-card-label">Featured coverage</div>
+              <div class="hero-card-heading">BCM-based Porsche smart keys</div>
+              <div class="hero-card-sub">
+                We specialise in the Porsche car-shaped key — the exact style shown in your photos.
+              </div>
+              <div class="hero-card-photo">
+                <!-- Replace with your real Porsche key photo -->
+                <span>
+                  Porsche BCM car-shaped key image here.<br />
+                  Replace this block with your own Porsche key photo.
+                </span>
+              </div>
+              <div class="hero-card-meta">
+                <div>
+                  <strong>Typical models</strong><br />
+                  Panamera · Cayenne · Macan<br />
+                  911 (991) · 718 Boxster/Cayman
+                </div>
+                <div>
+                  <strong>Check by reg</strong><br />
+                  We verify BCM platform &amp;<br />
+                  key type before booking.
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRAND SELECTOR -->
+      <section id="brands" class="selector">
+        <div class="container">
+          <div class="selector-grid">
+            <div class="selector-card">
+              <div class="selector-label">Option 1</div>
+              <div class="selector-title">Porsche</div>
+              <p class="selector-body">
+                BCM-platform cars using the car-shaped smart key. We do not list every Porsche — only
+                the exact key style we stock and support.
+              </p>
+              <p class="selector-models">
+                Includes: <span>Panamera · Cayenne · Macan · 911 (991) · 718</span>
+              </p>
+              <a href="#porsche" class="selector-link">
+                <span class="icon">➜</span>
+                View Porsche models we cover
+              </a>
+            </div>
+
+            <div class="selector-card">
+              <div class="selector-label">Option 2</div>
+              <div class="selector-title">Jaguar Land Rover</div>
+              <p class="selector-body">
+                Chrome-sided smart keys, earlier rubber-top smart keys and selected flip blade keys for
+                popular Jaguar &amp; Land Rover models.
+              </p>
+              <p class="selector-models">
+                Includes: <span>Range Rover · Sport · Evoque · Discovery · F-Pace · XF · XE</span>
+              </p>
+              <a href="#jlr" class="selector-link">
+                <span class="icon">➜</span>
+                View JLR models we cover
+              </a>
+            </div>
+
+            <div class="selector-card">
+              <div class="selector-label">Option 3</div>
+              <div class="selector-title">Volvo</div>
+              <p class="selector-body">
+                SPA-platform proximity keys — the modern Volvo fob styles shown in your key photos.
+              </p>
+              <p class="selector-models">
+                Includes: <span>XC90 · XC60 · XC40 · S90 · V90 · S60 · V60</span>
+              </p>
+              <a href="#volvo" class="selector-link">
+                <span class="icon">➜</span>
+                View Volvo models we cover
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORSCHE SECTION -->
+      <section id="porsche" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow">Porsche keys</div>
+              <h2 class="section-title">
+                <span>BCM</span> car-shaped Porsche keys only
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              We cover Porsche models using the car-shaped smart key you showed in your photos.
+              Everything is confirmed by registration/VIN before booking.
+            </p>
+          </div>
+
+          <div class="brand-grid-2">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Models we cover</div>
+                <div class="card-chip">BCM platform · Car-shaped key</div>
+              </div>
+              <div class="card-body">
+                <p>
+                  If your key looks like the Porsche key on this page, we can usually help. Typical
+                  BCM-based models using this style include:
+                </p>
+                <ul class="models-list">
+                  <li>Porsche Panamera models using the car-shaped BCM key</li>
+                  <li>Porsche Cayenne models using the car-shaped BCM key</li>
+                  <li>Porsche Macan (all trims using this key)</li>
+                  <li>Porsche 911 (991) with car-shaped key</li>
+                  <li>Porsche 718 Boxster with car-shaped key</li>
+                  <li>Porsche 718 Cayman with car-shaped key</li>
+                </ul>
+                <p class="note">
+                  To keep it precise, we match <span>key shape + registration</span>. If Porsche have
+                  changed the rear-design or platform for your specific year, we’ll tell you straight
+                  away if it’s outside our coverage.
+                </p>
+                <div class="warning">
+                  <strong>Important:</strong> We do <em>not</em> cover the newer Porsche keys where the
+                  design changed on the back with the later platform. This section is strictly for
+                  <strong>BCM-platform car-shaped keys only</strong>.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Porsche key services</div>
+                <div class="card-chip">On-site Porsche work</div>
+              </div>
+              <div class="card-body">
+                <div class="services-list">
+                  <div class="service-item">
+                    <strong>Spare BCM Porsche keys</strong>
+                    <span>Cut &amp; programmed while you wait for supported models.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>All keys lost</strong>
+                    <span>Full key creation and programming even with no working keys.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>Key added / extra key</strong>
+                    <span>Where possible, we add a new key alongside your existing one.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>BCM / key diagnostics</strong>
+                    <span>Non-start issues, key not recognised, sync problems.</span>
+                  </div>
+                </div>
+
+                <div class="tag-row">
+                  <div class="tag"><span>Dealer-level</span> diagnostics &amp; key tools</div>
+                  <div class="tag">Specialist in <span>high-value Porsche</span> work</div>
+                  <div class="tag">Clear fixed prices before we start</div>
+                </div>
+
+                <div class="key-photo">
+                  <!-- Replace src with your own Porsche key image -->
+                  <!-- <img src="images/porsche-bcm-key.jpg" alt="Porsche BCM car-shaped key" /> -->
+                  Upload your Porsche BCM key photo here and show the
+                  <strong>exact key style</strong> we cover (front &amp; back).
+                </div>
+
+                <p class="note">
+                  Quickest way to confirm: send a photo of your Porsche key (front &amp; back) and your
+                  reg via WhatsApp. We reply to confirm if it’s a BCM-supported key and quote you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JLR SECTION -->
+      <section id="jlr" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow">Jaguar Land Rover keys</div>
+              <h2 class="section-title">
+                Chrome smart keys &amp; selected blade keys
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              We match your Jaguar or Land Rover to the key styles in our photos: modern chrome-sided
+              smart keys, earlier rubber-top smart keys, and specific flip blade keys.
+            </p>
+          </div>
+
+          <div class="brand-grid-3">
+            <!-- SMART KEYS – MODERN CHROME SIDED -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Smart keys — modern chrome</div>
+                <div class="card-chip">Range Rover · Land Rover · Jaguar</div>
+              </div>
+              <div class="card-body">
+                <p>
+                  This matches your JLR keys with <strong>chrome sides and “RANGE ROVER” or
+                  “JAGUAR” text</strong>. Typical models:
+                </p>
+                <ul class="models-list">
+                  <li>Range Rover (L405) — chrome smart key style</li>
+                  <li>Range Rover Sport (L494)</li>
+                  <li>Range Rover Velar (L560)</li>
+                  <li>Range Rover Evoque (L538 &amp; L551) using this key</li>
+                  <li>Discovery 5 (L462)</li>
+                  <li>Discovery Sport (L550)</li>
+                  <li>Jaguar F-Pace</li>
+                  <li>Jaguar E-Pace</li>
+                  <li>Jaguar I-Pace</li>
+                  <li>Jaguar XF (later smart key style)</li>
+                  <li>Jaguar XE (later smart key style)</li>
+                  <li>Jaguar F-Type (smart key)</li>
+                  <li>Jaguar XJ (X351 facelift with this key)</li>
+                </ul>
+                <div class="key-photo">
+                  <!-- <img src="images/jlr-chrome-smart-key.jpg" alt="Jaguar Land Rover chrome smart key" /> -->
+                  Upload your chrome-sided JLR smart key photo here (Range Rover / Jaguar text on the side).
+                </div>
+                <p class="note">
+                  If your JLR key looks like this chrome smart key, we can normally supply
+                  <span>spare keys or all-keys-lost solutions</span>. We confirm by key photo and reg.
+                </p>
+              </div>
+            </div>
+
+            <!-- SMART KEYS – EARLIER RUBBER TOP -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Smart keys — earlier rubber-top</div>
+                <div class="card-chip">Jaguar smart keys</div>
+              </div>
+              <div class="card-body">
+                <p>
+                  This covers your slimmer, <strong>rubber-top JLR smart key</strong>, mainly used by
+                  earlier Jaguar models:
+                </p>
+                <ul class="models-list">
+                  <li>Jaguar XF (earlier generation with rubber-top key)</li>
+                  <li>Jaguar XJ (X351 early years with this key style)</li>
+                  <li>Selected early XE / F-Type prototypes using this layout</li>
+                </ul>
+                <div class="key-photo">
+                  <!-- <img src="images/jlr-rubber-smart-key.jpg" alt="Jaguar rubber-top smart key" /> -->
+                  Upload your Jaguar rubber-top smart key photo here.
+                </div>
+                <p class="note">
+                  These keys are less common now but still fully supported where we can confirm them
+                  against your VIN and key photo.
+                </p>
+              </div>
+            </div>
+
+            <!-- BLADE KEYS -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Flip blade keys</div>
+                <div class="card-chip">Land Rover blade keys</div>
+              </div>
+              <div class="card-body">
+                <p>
+                  This matches your older <strong>flip-out blade key</strong> from the photos. Typical
+                  coverage includes:
+                </p>
+                <ul class="models-list">
+                  <li>Land Rover Freelander 2</li>
+                  <li>Land Rover Discovery 3</li>
+                  <li>Land Rover Discovery 4 / LR4</li>
+                  <li>Range Rover Sport (L320)</li>
+                  <li>Range Rover (L322) with this flip key style</li>
+                </ul>
+                <div class="key-photo">
+                  <!-- <img src="images/jlr-flip-key.jpg" alt="Land Rover flip blade key" /> -->
+                  Upload your Land Rover flip blade key photo here.
+                </div>
+                <p class="note">
+                  Perfect when you want a spare blade key or need recovery from an all-keys-lost
+                  situation on these older JLR vehicles.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <div class="card-header">
+              <div class="card-title">Jaguar &amp; Land Rover key services</div>
+              <div class="card-chip">Mobile JLR specialist</div>
+            </div>
+            <div class="card-body">
+              <div class="services-list">
+                <div class="service-item">
+                  <strong>Spare JLR keys</strong>
+                  <span>Extra smart or blade key cut &amp; coded to your vehicle.</span>
+                </div>
+                <div class="service-item">
+                  <strong>All keys lost</strong>
+                  <span>We can often recover even when no working JLR keys remain.</span>
+                </div>
+                <div class="service-item">
+                  <strong>Keyless entry / start issues</strong>
+                  <span>Diagnosis when your JLR won’t recognise the key.</span>
+                </div>
+                <div class="service-item">
+                  <strong>Key &amp; module diagnostics</strong>
+                  <span>Specialist tooling for Range Rover, Land Rover &amp; Jaguar platforms.</span>
+                </div>
+              </div>
+              <p class="note">
+                Just choose your <span>make &amp; model</span> above, then send a photo of your key
+                and your registration to confirm exact coverage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VOLVO SECTION -->
+      <section id="volvo" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow">Volvo keys</div>
+              <h2 class="section-title">
+                Volvo SPA platform proximity keys
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              We support the modern Volvo key styles from your photos — both the premium metal-edged
+              fobs and the classic SPA proximity keys.
+            </p>
+          </div>
+
+          <div class="brand-grid-2">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Models we cover</div>
+                <div class="card-chip">SPA proximity keys</div>
+              </div>
+              <div class="card-body">
+                <p>
+                  These keys are used on most newer SPA-platform Volvos. We typically cover:
+                </p>
+                <ul class="models-list">
+                  <li>Volvo XC90 (SPA platform, proximity key)</li>
+                  <li>Volvo XC60 (newer generation with this key)</li>
+                  <li>Volvo XC40 (including hybrid/EV variants with this key)</li>
+                  <li>Volvo S90</li>
+                  <li>Volvo V90 &amp; V90 Cross Country</li>
+                  <li>Volvo S60 (newer SPA-based generation)</li>
+                  <li>Volvo V60 &amp; V60 Cross Country</li>
+                </ul>
+                <p class="note">
+                  We focus only on the key styles shown in your photos. Older Volvo flip keys and
+                  earlier platform keys are <span>not</span> listed here.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Volvo key styles &amp; services</div>
+                <div class="card-chip">Premium Volvo keys</div>
+              </div>
+              <div class="card-body">
+                <div class="key-photo">
+                  <!-- <img src="images/volvo-spa-key-1.jpg" alt="Volvo SPA premium proximity key" /> -->
+                  <!-- <img src="images/volvo-spa-key-2.jpg" alt="Volvo SPA classic proximity key" /> -->
+                  Upload the Volvo key photos you sent (both the premium metal-edge key and the classic SPA fob).
+                </div>
+
+                <div class="services-list" style="margin-top:10px;">
+                  <div class="service-item">
+                    <strong>Spare Volvo keys</strong>
+                    <span>Extra proximity key supplied, cut (if required) and programmed.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>All keys lost</strong>
+                    <span>On many SPA Volvos, we can recover when all keys are lost.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>Key not recognised</strong>
+                    <span>Diagnosis for proximity/keyless start issues.</span>
+                  </div>
+                  <div class="service-item">
+                    <strong>High-end key work</strong>
+                    <span>We only take on the Volvo keys we can do properly, using the correct tooling.</span>
+                  </div>
+                </div>
+
+                <p class="note">
+                  Send a photo of your Volvo key and your registration. We confirm if it’s one of the
+                  <span>SPA proximity keys</span> we currently support and quote accordingly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div>
+            &copy; <span class="highlight">Premium Luxury Car Keys</span>.
+            Trading as Kovac Services.
+          </div>
+          <div>
+            Porsche · Jaguar Land Rover · Volvo specialist automotive locksmith.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
